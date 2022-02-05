@@ -84,4 +84,4 @@ class GiveAwayWinner(models.Model):
         verbose_name_plural = 'GiveAway Winner'
 
     def __str__(self):
-        return f'{self.name}'
+        return f'{self.id} - {self.competitor.name} - {self.content_type} - {self.id}'
